@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tp-01-58b6f": {
+      "hosting": {
+        "saladejuegos": [
+          "tp-01-58b6f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tp-01-58b6f"
+  }
+}

@@ -1,0 +1,18 @@
+<main>
+    <div class="header">
+        <div>Sakura<span>Games</span></div>
+    </div>
+    <br>
+    <form class="form_class" (submit)="login(email.value, password.value, $event)">
+    <div class="body"> </div>
+    
+        <div class="login"> 
+            <input class="field_class" type="email" class="login-username" autofocus="true" required="true" placeholder="Email" #email />
+            <input class="field_class" type="password" class="login-password" required="true" placeholder="Password" #password />
+            <input type="submit" name="Login" value="Login" class="login-submit" />
+            <button (click)="fillFields('santi@santi.com', '123456')" class="fill-button">Usuario Santi</button>
+            <button (click)="fillFields('admin@admin.com', '123456')" class="fill-button">Usuario Admin</button>
+            <button (click)="fillFields('agustin@agustin.com', '123456')" class="fill-button">Usuario Agustin</button>
+        </div>
+    </form>
+      

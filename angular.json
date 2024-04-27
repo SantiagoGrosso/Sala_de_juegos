@@ -88,8 +88,28 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "saladejuegos:build:production",
+              "serveTarget": "saladejuegos:serve:production"
+            },
+            "development": {
+              "buildTarget": "saladejuegos:build:development",
+              "serveTarget": "saladejuegos:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "369c4c65-494e-4f67-864d-3045c429af84"
   }
 }
